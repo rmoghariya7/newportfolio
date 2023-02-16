@@ -90,6 +90,13 @@ span {
 nav {
   margin: 0 20%;
 }
+.nav-content ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-content ul li a:hover{
+    text-decoration: underline;
+}
 
 .nav-container {
   display: flex;
@@ -177,8 +184,8 @@ nav {
   font-size: 22px;
   line-height: 40px;
 }
-.section-1 {
-  z-index: 1;
+.section-1,.section-2 {
+  margin-top: 13rem;
 }
 
 .current-work {
