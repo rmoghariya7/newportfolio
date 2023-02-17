@@ -140,6 +140,7 @@ nav {
   position: absolute;
   left: 8rem;
   top: -4rem;
+  animation: animate2 0.5s 1s;
 }
 .name {
   margin-bottom: 3rem;
@@ -160,6 +161,7 @@ nav {
 .myself {
   display: flex;
   align-items: left;
+  animation: animate-on-load 0.5s 1s;
 }
 .intro-main .me {
   background: radial-gradient(
@@ -197,7 +199,7 @@ nav {
 }
 .section-1,.section-2 {
   margin-top: 13rem;
-  animation: animate-on-load 0.5s 1s;
+  
   
 }
 
@@ -574,11 +576,25 @@ font-size: 25px
 
   0%{
     opacity: 0;
+    transform: translateX(-20%) ;
    
   }
   100%{
     opacity: 1;
-    
+    transform: translateX(0%) 
+  }
+  
+}
+@keyframes animate2{
+
+  0%{
+    opacity: 0;
+    transform: translateX(+20%) ;
+   
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%) 
   }
   
 }
