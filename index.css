@@ -505,13 +505,30 @@ font-size: 25px
     display: none;
   }
  
- 
-  .myself img{
-    max-width: 45%;
+  .intro-main h1 {
+  font-size: 30px;
   }
 
   .myself{
     flex-direction: column;
+  }
+  .myself img{
+    max-width: 45%;
+  }
+  .sub-intro{
+    margin-top: 5rem;
+  }
+  .about-para{
+    font-size: 16px;
+  }
+  .skills{
+    margin-top: 2rem;
+  }
+  .skills p:nth-child(1) {
+    margin-top: 2rem;
+  }
+  .current-work{
+    margin-bottom: 2rem;
   }
   .circle{
     display: none;
@@ -526,6 +543,10 @@ font-size: 25px
 
  .card{
   padding: 0.5rem;
+ }
+
+ .card p{
+  margin-bottom: 0;
  }
   
 .main-container{
@@ -570,34 +591,4 @@ font-size: 25px
     transform: rotateX(0);
   }
   
-}
-
-.loader{
-  height: 100vh;
-  width: 100vw;
-  background-color: #000000;
-  z-index: 99999;
-  position: relative;
-  display: none;
-  animation: loader 1s forwards !important;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-
-}
-
-
-@keyframes loader {
-  0%{
-    display: flex !important;
-    opacity: 1;
-  }
-  80%{
-    display: flex !important;
-    opacity: 1;
-  }
-  100%{
-    display: flex !important;
-    opacity: 0;
-  }
 }
