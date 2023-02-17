@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Typing Effect</title>
   </head>
   <body>
     <header>
@@ -32,14 +34,15 @@
         <div class="main-container">
           <div class="intro">
             <img src="assets/Arrow.svg" alt="" />
-            <p class="name">Hello! I am <span>Moghariya Rahul</span></p>
+            <p class="name">Hello! I am <span id="typed3"></span></p>
           </div>
 
           <div class="intro-main">
             <div class="myself">
               <img src="assets/Me.png" alt="" class="me" />
               <div class="intro-para">
-                <p>A developer who</p>
+                <p >A developer who</p>
+                <!-- <span class="typing">My Skills are: </span><span id="typed3"></span> -->
                 <h1>
                   Judge a book <br />
                   by its <span class="cover">cover</span>...
@@ -215,5 +218,15 @@
         </div>
       </section>
     </main>
+
+    <script>
+     var typed3 = new Typed('#typed3', {
+    strings: [' Moghariya Rahul', 'A Frontend Engineer'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    smartBackspace: true, // this is a default
+    loop: true
+  });
+    </script>
   </body>
 </html>

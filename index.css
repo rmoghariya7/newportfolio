@@ -509,7 +509,9 @@ font-size: 25px
   
 }
 @media screen and (max-width:768px) {
-  
+  .name{
+    font-size: 14px;
+  }
   .nav-content ul {
     gap: 3rem;
   }
@@ -616,4 +618,8 @@ font-size: 25px
     transform: rotateX(0);
   }
   
+}
+
+.typing{
+  color: #fff;
 }
