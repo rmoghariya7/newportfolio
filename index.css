@@ -99,7 +99,7 @@ nav {
   top: 0;
   z-index: 999;
   width: 100vw;
-  animation: animate-nav 0.5s ease-in 1s;
+  animation: animate-nav 0.7s ease-in 0.2s;
 }
 .nav-content ul li a{
     color: #fff;
@@ -140,7 +140,7 @@ nav {
   position: absolute;
   left: 8rem;
   top: -4rem;
-  animation: animate2 0.5s 1s;
+  animation: animate2 0.7s 0.2s;
 }
 .name {
   margin-bottom: 3rem;
@@ -161,7 +161,7 @@ nav {
 .myself {
   display: flex;
   align-items: left;
-  animation: animate-on-load 0.5s 1s;
+  animation: animate-on-load 0.7s 0.2s;
 }
 .intro-main .me {
   background: radial-gradient(
