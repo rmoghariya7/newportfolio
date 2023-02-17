@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 /* Box sizing rules */
 *,
@@ -31,7 +31,10 @@ ol[role="list"] {
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
+}
+*{
+  scroll-behavior:smooth;
 }
 
 /* Set core body defaults */
@@ -78,17 +81,25 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+
 }
 .f-11 {
   font-size: 11px;
 }
 
 span {
-  color: #7127ba;
-  font-family: "Preahvihear", sans-serif;
+  color:#bc7bff;
+  font-family: "Poppins", sans-serif;
 }
+
 nav {
-  margin: 0 20%;
+  /* margin: 0 20%; */
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  animation: animate-nav 0.5s ease-in 1s;
 }
 .nav-content ul li a{
     color: #fff;
@@ -102,7 +113,7 @@ nav {
   display: flex;
   background-color: #1a0b2e;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .nav-content ul {
@@ -125,7 +136,7 @@ nav {
   align-items: center;
   font-weight: 400;
   font-size: 19px;
-  font-family: "Preahvihear", sans-serif;
+  font-family: "Poppins", sans-serif;
   position: absolute;
   left: 8rem;
   top: -4rem;
@@ -142,7 +153,7 @@ nav {
 .intro-main {
   display: flex;
 
-  font-family: "Preahvihear", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 17px;
   flex-direction: column;
 }
@@ -186,6 +197,8 @@ nav {
 }
 .section-1,.section-2 {
   margin-top: 13rem;
+  animation: animate-on-load 0.5s 1s;
+  
 }
 
 .current-work {
@@ -196,7 +209,7 @@ nav {
 .work-p {
   font-weight: 400;
   font-size: 40px;
-  font-family: "Preahvihear", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 44px;
 }
 
@@ -259,6 +272,10 @@ nav {
   padding: 10px 23px;
 }
 
+.svgtreem{
+  display: none;
+}
+
 .skills {
   margin-top: 7rem;
   display: flex;
@@ -273,7 +290,7 @@ nav {
 
 .skills p:nth-child(1) {
   margin-top: 5rem;
-  font-family: "Preahvihear";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -406,19 +423,19 @@ nav {
     
 }
 .contact p:nth-child(1){
-font-family: 'Preahvihear';
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 25px
 }
 .contact p:nth-child(2){
-    font-family: 'Preahvihear';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
 }
 .contact p:nth-child(3){
-    font-family: 'Preahvihear';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -427,4 +444,160 @@ font-size: 25px
     margin-top:1rem ;
     display: flex;
     gap: 2.5rem;
+}
+#contacts{
+  scroll-padding-top: 50rem;
+
+
+}
+
+@media screen and (max-width:1200px) {
+ 
+
+.intro-para{
+  margin-top:1rem;
+}
+
+  
+  .click-img, .click-img2{
+    display: none;
+  }
+.circle{
+  bottom: 87px;
+}
+  
+.main-container{
+  margin: 0 10%;
+}
+.my-projects{
+  flex-direction: column;
+}
+.my-projects2{
+  flex-direction: column;
+}
+.project-left,.project-left2{
+  text-align: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+  
+}
+@media screen and (max-width:768px) {
+  
+  .nav-content ul {
+    gap: 3rem;
+  }
+  .svgtreem{
+    display:block;
+  }
+  .svgtree{
+    display: none;
+  }
+ 
+ 
+  .myself img{
+    max-width: 45%;
+  }
+
+  .myself{
+    flex-direction: column;
+  }
+  .circle{
+    display: none;
+  }
+  .section-2{
+    margin-top: 5rem;
+    
+  }
+  .projects{
+    padding: 5%;
+  }
+
+ .card{
+  padding: 0.5rem;
+ }
+  
+.main-container{
+  margin: 0 5%;
+}
+.card p{
+  font-size: 12px;
+  width: 100%;
+}
+.my-projects{
+  margin-bottom: 2rem;
+}
+.my-projects2{
+  margin-bottom: 5rem;
+}
+  
+}
+@media screen and (max-width:420px) {
+  .nav-content ul {
+    gap: 1rem;
+  }
+}
+
+@keyframes animate-on-load{
+
+  0%{
+    opacity: 0;
+   
+  }
+  100%{
+    opacity: 1;
+    
+  }
+  
+}
+@keyframes animate-nav{
+
+  0%{
+    transform:translateY(-100px)
+  }
+  100%{
+    transform: rotateX(0);
+  }
+  
+}
+
+.loader{
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  z-index: 99999;
+  position: relative;
+  display: none;
+  animation: loader 1s forwards !important;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+@keyframes loader {
+  0%{
+    display: flex !important;
+    opacity: 1;
+  }
+  80%{
+    display: flex !important;
+    opacity: 1;
+  }
+  100%{
+    display: flex !important;
+    opacity: 0;
+  }
 }
