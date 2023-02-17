@@ -413,6 +413,7 @@ nav {
 .card p {
   font-weight: 500;
   font-size: 18px;
+  margin-bottom: 0;
 }
 .click-img {
   display: flex;
