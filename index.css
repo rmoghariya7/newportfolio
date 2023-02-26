@@ -104,6 +104,7 @@ nav {
 .nav-content ul li a{
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 .nav-content ul li a:hover{
     text-decoration: underline;
